@@ -37,6 +37,8 @@
 		8CA138CA20033AEF0046065D /* UIControl+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA138B520033AEE0046065D /* UIControl+Add.m */; };
 		8CA138CB20033AEF0046065D /* UIImageView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA138B820033AEE0046065D /* UIImageView+Additions.m */; };
 		8CA138CC20033AEF0046065D /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA138BB20033AEF0046065D /* UILabel+Utils.m */; };
+		8CA8F25C21B2563000EAD007 /* SOAComponentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8F25B21B2563000EAD007 /* SOAComponentAppDelegate.m */; };
+		8CA8F25F21B257A400EAD007 /* MakeKeyWindowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA8F25E21B257A400EAD007 /* MakeKeyWindowService.m */; };
 		A7E7ED8A4393D63E3FED2C92 /* libPods-BasicProjecFrameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94E8ACC10A6197E6764F54 /* libPods-BasicProjecFrameUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +126,10 @@
 		8CA138BB20033AEF0046065D /* UILabel+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utils.m"; sourceTree = "<group>"; };
 		8CA138BC20033AEF0046065D /* UILabel+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Utils.h"; sourceTree = "<group>"; };
 		8CA138CE20033B950046065D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8CA8F25A21B2563000EAD007 /* SOAComponentAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAComponentAppDelegate.h; sourceTree = "<group>"; };
+		8CA8F25B21B2563000EAD007 /* SOAComponentAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAComponentAppDelegate.m; sourceTree = "<group>"; };
+		8CA8F25D21B257A400EAD007 /* MakeKeyWindowService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeKeyWindowService.h; sourceTree = "<group>"; };
+		8CA8F25E21B257A400EAD007 /* MakeKeyWindowService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeKeyWindowService.m; sourceTree = "<group>"; };
 		A15B47FE9FBDD9D5B0BB891C /* libPods-BasicProjecFrameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicProjecFrameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B6A375BB2A9273D8370616 /* Pods-BasicProjecFrameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProjecFrameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProjecFrameTests/Pods-BasicProjecFrameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF85DA3A655DEAF51BCF9BF /* Pods-BasicProjecFrameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProjecFrameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProjecFrameTests/Pods-BasicProjecFrameTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,8 +212,7 @@
 		8CA138302003225D0046065D /* BasicProjecFrame */ = {
 			isa = PBXGroup;
 			children = (
-				8CA138312003225D0046065D /* AppDelegate.h */,
-				8CA138322003225D0046065D /* AppDelegate.m */,
+				8CA8F26021B257AD00EAD007 /* AppDelegate */,
 				8CA1387920032E0F0046065D /* Class */,
 				8CA1387420032D920046065D /* Other */,
 				8CA1387D20032E0F0046065D /* Vender */,
@@ -215,6 +220,7 @@
 				8CA1386C20032D910046065D /* Resource */,
 				8CA138372003225D0046065D /* Main.storyboard */,
 				8CA1383C2003225D0046065D /* LaunchScreen.storyboard */,
+				8CA1383F2003225E0046065D /* Info.plist */,
 				8CA138402003225E0046065D /* main.m */,
 			);
 			path = BasicProjecFrame;
@@ -530,11 +536,23 @@
 			isa = PBXGroup;
 			children = (
 				8CA1383A2003225D0046065D /* Assets.xcassets */,
-				8CA1383F2003225E0046065D /* Info.plist */,
 				8CA138CE20033B950046065D /* PrefixHeader.pch */,
 			);
 			name = SupportFile;
 			path = BasicProjecFrame/SupportFile;
+			sourceTree = "<group>";
+		};
+		8CA8F26021B257AD00EAD007 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8CA8F25A21B2563000EAD007 /* SOAComponentAppDelegate.h */,
+				8CA8F25B21B2563000EAD007 /* SOAComponentAppDelegate.m */,
+				8CA8F25D21B257A400EAD007 /* MakeKeyWindowService.h */,
+				8CA8F25E21B257A400EAD007 /* MakeKeyWindowService.m */,
+				8CA138312003225D0046065D /* AppDelegate.h */,
+				8CA138322003225D0046065D /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -834,6 +852,7 @@
 				8CA13883200330790046065D /* BaseViewController.m in Sources */,
 				8CA138C720033AEF0046065D /* UIButton+SSEdgeInsets.m in Sources */,
 				8CA138412003225E0046065D /* main.m in Sources */,
+				8CA8F25F21B257A400EAD007 /* MakeKeyWindowService.m in Sources */,
 				8CA138BE20033AEF0046065D /* NSDate+Utils.m in Sources */,
 				8CA138C220033AEF0046065D /* UITableView+NoExtraLine.m in Sources */,
 				8CA138332003225D0046065D /* AppDelegate.m in Sources */,
@@ -848,6 +867,7 @@
 				8CA138BF20033AEF0046065D /* UIView+Utils.m in Sources */,
 				8CA138C520033AEF0046065D /* TableViewAnimationKit.m in Sources */,
 				8CA138C020033AEF0046065D /* UIView+ParentController.m in Sources */,
+				8CA8F25C21B2563000EAD007 /* SOAComponentAppDelegate.m in Sources */,
 				8CA138BD20033AEF0046065D /* UIImage+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
