@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3EE0B75270FC186CF34A446D /* libPods-BasicProjecFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A093D40DDDB6D7565A000 /* libPods-BasicProjecFrame.a */; };
 		6B3B1881FE206FC6ED846D37 /* libPods-BasicProjecFrameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15B47FE9FBDD9D5B0BB891C /* libPods-BasicProjecFrameTests.a */; };
+		8C1E1CFC21B6B6B6003AFDD8 /* NSArray+ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E1CF721B6B6B5003AFDD8 /* NSArray+ErrorHandle.m */; };
+		8C1E1CFD21B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E1CF821B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.m */; };
+		8C1E1CFE21B6B6B6003AFDD8 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E1CFA21B6B6B6003AFDD8 /* NSObject+SwizzleMethod.m */; };
 		8CA138332003225D0046065D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA138322003225D0046065D /* AppDelegate.m */; };
 		8CA138392003225D0046065D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA138372003225D0046065D /* Main.storyboard */; };
 		8CA1383B2003225D0046065D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1383A2003225D0046065D /* Assets.xcassets */; };
@@ -66,6 +69,12 @@
 		491CFB5289E9ADBBCD1EBBFF /* Pods-BasicProjecFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProjecFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProjecFrame/Pods-BasicProjecFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		881B45B94409B60C12D09583 /* Pods-BasicProjecFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicProjecFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasicProjecFrame/Pods-BasicProjecFrame.release.xcconfig"; sourceTree = "<group>"; };
 		8A4A093D40DDDB6D7565A000 /* libPods-BasicProjecFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BasicProjecFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1E1CF621B6B6B5003AFDD8 /* NSArray+ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ErrorHandle.h"; sourceTree = "<group>"; };
+		8C1E1CF721B6B6B5003AFDD8 /* NSArray+ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ErrorHandle.m"; sourceTree = "<group>"; };
+		8C1E1CF821B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ErrorHandle.m"; sourceTree = "<group>"; };
+		8C1E1CF921B6B6B6003AFDD8 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
+		8C1E1CFA21B6B6B6003AFDD8 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
+		8C1E1CFB21B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ErrorHandle.h"; sourceTree = "<group>"; };
 		8CA1382E2003225D0046065D /* BasicProjecFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicProjecFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA138312003225D0046065D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CA138322003225D0046065D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +195,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8C1E1CF521B6B691003AFDD8 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E1CF621B6B6B5003AFDD8 /* NSArray+ErrorHandle.h */,
+				8C1E1CF721B6B6B5003AFDD8 /* NSArray+ErrorHandle.m */,
+				8C1E1CFB21B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.h */,
+				8C1E1CF821B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		8C1E1CFF21B6B717003AFDD8 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E1CF921B6B6B6003AFDD8 /* NSObject+SwizzleMethod.h */,
+				8C1E1CFA21B6B6B6003AFDD8 /* NSObject+SwizzleMethod.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		8CA138252003225D0046065D = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +304,8 @@
 		8CA1386F20032D920046065D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8C1E1CFF21B6B717003AFDD8 /* NSObject */,
+				8C1E1CF521B6B691003AFDD8 /* NSArray */,
 				8CA1389220033AED0046065D /* NSDate */,
 				8CA1389F20033AED0046065D /* NSString */,
 				8CA138A420033AEE0046065D /* TableViewAnimationKit */,
@@ -847,6 +878,7 @@
 				8CA13880200330630046065D /* BaseTabBar.m in Sources */,
 				8CA138C620033AEF0046065D /* UITableView+XSAnimationKit.m in Sources */,
 				8CA1388D2003395C0046065D /* UIBarButtonItem+Extension.m in Sources */,
+				8C1E1CFD21B6B6B6003AFDD8 /* NSMutableArray+ErrorHandle.m in Sources */,
 				8CA138C920033AEF0046065D /* UIScreen+Additions.m in Sources */,
 				8CA138C820033AEF0046065D /* UIColor+Utils.m in Sources */,
 				8CA13883200330790046065D /* BaseViewController.m in Sources */,
@@ -857,6 +889,7 @@
 				8CA138C220033AEF0046065D /* UITableView+NoExtraLine.m in Sources */,
 				8CA138332003225D0046065D /* AppDelegate.m in Sources */,
 				8CA138CA20033AEF0046065D /* UIControl+Add.m in Sources */,
+				8C1E1CFC21B6B6B6003AFDD8 /* NSArray+ErrorHandle.m in Sources */,
 				8CA138C420033AEF0046065D /* NSString+Utils.m in Sources */,
 				8CA138C320033AEF0046065D /* NSString+Additions.m in Sources */,
 				8CA138CB20033AEF0046065D /* UIImageView+Additions.m in Sources */,
@@ -865,6 +898,7 @@
 				8CA1388A200331CF0046065D /* BaseTabBarController.m in Sources */,
 				8CA13886200330A50046065D /* BaseNavigationController.m in Sources */,
 				8CA138BF20033AEF0046065D /* UIView+Utils.m in Sources */,
+				8C1E1CFE21B6B6B6003AFDD8 /* NSObject+SwizzleMethod.m in Sources */,
 				8CA138C520033AEF0046065D /* TableViewAnimationKit.m in Sources */,
 				8CA138C020033AEF0046065D /* UIView+ParentController.m in Sources */,
 				8CA8F25C21B2563000EAD007 /* SOAComponentAppDelegate.m in Sources */,
